@@ -1,0 +1,3 @@
+cd adnaanaeem.github.io
+
+echo "Adnan Naeem" > index.html
