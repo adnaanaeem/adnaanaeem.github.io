@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Adnan Naeem - Senior Mobile Applications Engineer",
+    "description": "Resume of Adnan Naeem - Senior Android Engineer with 7+ years of experience in Kotlin, Java, Jetpack Compose, React Native and scalable mobile app development.",
+    "keywords": "Adnan Naeem, Android Engineer, Senior Mobile Developer, Kotlin, React Native, Lahore, Resume, Portfolio",
+    "social": {
+      "ogTitle": "Adnan Naeem - Senior Mobile Applications Engineer",
+      "ogDescription": "7+ years of experience in Android & React Native | Built apps with 10M+ downloads | Expert in Kotlin, Java, Jetpack Compose, Firebase",
+      "twitterDescription": "Android & React Native Engineer | Apps with 10M+ downloads",
+      "imageUrl": "https://adnaanaeem.github.io/resume/profile.jpg",
+      "resumeUrl": "https://adnaanaeem.github.io/resume"
+    },
+    "structuredData": {
+      "name": "Adnan Naeem",
+      "jobTitle": "Senior Mobile Applications Engineer",
+      "imageUrl": "https://adnaanaeem.github.io/resume/profile.jpg",
+      "addressLocality": "Lahore",
+      "addressCountry": "Pakistan",
+      "email": "mailto:adnaanaeem@gmail.com",
+      "telephone": "+923438673052",
+      "socialProfiles": [
+        "https://linkedin.com/in/adnaanaeem",
+        "https://github.com/adnaanaeem"
+      ],
+      "knowsAbout": [
+        "Android",
+        "Kotlin",
+        "React Native",
+        "Jetpack Compose",
+        "Mobile Applications",
+        "Firebase",
+        "MVVM"
+      ]
+    }
+  },
+  "personalInfo": {
+    "name": "ADNAN NAEEM",
+    "title": "Senior Mobile Applications Engineer (Android)",
+    "contact": {
+      "location": "Lahore, Pakistan",
+      "phone": "+92 343 8673052",
+      "email": "adnaanaeem@gmail.com",
+      "linkedin": "https://linkedin.com/in/adnaanaeem",
+      "github": "https://github.com/adnaanaeem"
+    }
+  },
+  "sections": [
+    {
+      "type": "summary",
+      "title": "Professional Summary",
+      "content": "Senior Mobile Applications Engineer with 7+ years of experience architecting and delivering scalable Android apps (10M+ downloads). Proficient in Kotlin, Java, Jetpack Compose, and Firebase, with expertise in performance optimization, Jenkins CI/CD pipelines, and modern Android frameworks. Proven leader in driving architectural enhancements, accelerating delivery, and building high-performing teams, with React Native as a secondary skill for cross-platform development."
+    },
+    {
+      "type": "technologies",
+      "title": "Core Technologies",
+      "items": [
+        {
+          "category": "Mobile Development",
+          "skills": [
+            "Kotlin",
+            "Java",
+            "React Native",
+            "Jetpack Compose"
+          ]
+        },
+        {
+          "category": "Architecture & Patterns",
+          "skills": [
+            "MVVM",
+            "Dagger",
+            "Coroutines",
+            "Room",
+            "Navigation"
+          ]
+        },
+        {
+          "category": "Testing & Quality",
+          "skills": [
+            "JUnit",
+            "Mockito",
+            "MockK",
+            "Code Reviews"
+          ]
+        },
+        {
+          "category": "Cloud & Integration",
+          "skills": [
+            "Firebase",
+            "AWS",
+            "REST APIs",
+            "JSON"
+          ]
+        },
+        {
+          "category": "Development Tools",
+          "skills": [
+            "Android Studio",
+            "Git",
+            "Jira",
+            "Agile",
+            "Jenkins"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "experience",
+      "title": "Professional Experience",
+      "items": [
+        {
+          "company": "AOMATA LLC",
+          "role": "Senior Software Engineer (Android)",
+          "period": "June 2022 - Present | Lahore, Pakistan",
+          "achievements": [
+            "Implemented architectural improvements that enhanced engineering velocity.",
+            "Led end-to-end feature development ensuring consistent, timely product releases",
+            "Collaborated cross-functionally with product teams to deliver user-centric solutions"
+          ]
+        },
+        {
+          "company": "UNATION INC",
+          "role": "Senior Mobile Apps Developer",
+          "period": "December 2021 - April 2022 | Remote",
+          "achievements": [
+            "Successfully migrated legacy Java application to React Native for cross-platform delivery",
+            "Served as Android Technical Lead for geofencing-enabled events application",
+            "Enhanced app architecture with Room database and MVVM pattern for offline capabilities"
+          ]
+        },
+        {
+          "company": "Fecundity LLP",
+          "role": "Senior Software Engineer (Mobile)",
+          "period": "February 2020 - November 2021 | Lahore, Pakistan",
+          "achievements": [
+            "Led Android development team (2-3 engineers) delivering client solutions",
+            "Managed complete project lifecycle from architecture design to production deployment"
+          ]
+        },
+        {
+          "company": "OZI Technology",
+          "role": "Senior Software Engineer (Android)",
+          "period": "May 2019 - December 2020 | Lahore, Pakistan",
+          "achievements": [
+            "Designed scalable Android applications with modern architecture patterns",
+            "Mentored junior developers and managed Play Store & Amazon App Store releases"
+          ]
+        },
+        {
+          "company": "Content Arcade",
+          "role": "Senior Android Developer",
+          "period": "November 2017 - May 2019 | Lahore, Pakistan",
+          "achievements": [
+            "Developed and maintained consumer applications achieving 10M+ downloads",
+            "Recognized as Employee of the Quarter (2018) for exceptional performance"
+          ]
+        },
+        {
+          "company": "Marketing Solutions",
+          "role": "Android Developer",
+          "period": "August 2016 - October 2017 | Lahore, Pakistan",
+          "achievements": [
+            "Progressed from intern to developer, designing commercial Android applications"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "projects",
+      "title": "Featured Projects",
+      "items": [
+        {
+          "name": "Smart Transfer",
+          "url": "https://play.google.com/store/apps/details?id=com.aomatatech.datatransferapp.filesharing",
+          "description": "Smart Transfer is a high-performance file sharing app with 10M+ downloads. It enables fast data transfer via Wi-Fi and hotspot, phone cloning, and internet-based sharing, while also offering productivity tools like bookmarks, storage and contacts clutter manager, and device stats (Wi-Fi and battery)"
+        },
+        {
+          "name": "UNATION Events",
+          "url": "https://play.google.com/store/apps/details?id=com.unation.app",
+          "description": "Location-based event discovery platform with advanced geofencing, MVVM architecture, REST API integration, and Kotlin Coroutines"
+        },
+        {
+          "name": "Logo Maker Pro",
+          "url": "https://play.google.com/store/apps/details?id=org.contentarcade.apps.logomaker",
+          "description": "Creative design tool with 10M+ downloads, featuring Canvas drawing engine and AWS cloud integration for professional logo creation"
+        },
+        {
+          "name": "Additional Portfolio",
+          "url": "",
+          "description": "<a href=\"https://play.google.com/store/apps/details?id=org.contentarcadeapps.plagiarismchecker\" target=\"_blank\">Plagiarism Checker</a> • <a href=\"https://play.google.com/store/apps/details?id=com.ca.pdf.editor.converter.tools\" target=\"_blank\">PDF Converter</a> • <a href=\"https://play.google.com/store/apps/details?id=com.covermaker.thumbnail.maker\" target=\"_blank\">Thumbnail Maker</a> • <a href=\"https://play.google.com/store/apps/details?id=com.grammar.checker.corrector\" target=\"_blank\">Grammar Checker</a>"
+        }
+      ]
+    },
+    {
+      "type": "education",
+      "title": "Education",
+      "items": [
+        {
+          "degree": "Bachelor of Science in Computer Science (BSCS)",
+          "institution": "Government College University, Faisalabad, Pakistan • 2016"
+        },
+        {
+          "degree": "Intermediate in Computer Science (ICS)",
+          "institution": "Board of Intermediate & Secondary Education, Faisalabad • 2011"
+        },
+        {
+          "degree": "Matric (Science)",
+          "institution": "Board Intermediate and Secondary Education Faisalabad, Pakistan | 2009"
+        }
+      ]
+    }
+  ]
+}
