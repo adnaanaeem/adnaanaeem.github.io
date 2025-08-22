@@ -43,6 +43,7 @@ async function loadResumeData() {
  * Dynamically populates the <head> tag with SEO and social media metadata.
  * @param {object} meta - The meta object from data.json.
  */
+// In script.js
 function renderMetadata(meta) {
     document.title = meta.title;
     const createMetaTag = (attrs) => {
@@ -73,10 +74,19 @@ function renderMetadata(meta) {
         document.head.appendChild(ldJsonScript);
     }
     const sd = meta.structuredData;
+    // UPDATED to use standard schema.org properties
     ldJsonScript.textContent = JSON.stringify({
-        "@context": "https://schema.org/", "@type": "Person", "name": sd.name, "jobTitle": sd.jobTitle, "url": meta.social.resumeUrl, "image": sd.imageUrl,
+        "@context": "https://schema.org/", 
+        "@type": "Person", 
+        "name": sd.name, 
+        "jobTitle": sd.jobTitle, 
+        "url": meta.social.resumeUrl, 
+        "image": sd.image, // Corrected: sd.image
         "address": { "@type": "PostalAddress", "addressLocality": sd.addressLocality, "addressCountry": sd.addressCountry },
-        "email": sd.email, "telephone": sd.telephone, "sameAs": sd.socialProfiles, "knowsAbout": sd.knowsAbout
+        "email": sd.email, 
+        "telephone": sd.telephone, 
+        "sameAs": sd.sameAs, // Corrected: sd.sameAs
+        "knowsAbout": sd.knowsAbout
     }, null, 2);
 }
 
@@ -192,13 +202,13 @@ function setupEventListeners() {
         const useTag = toggleImageBtn.querySelector('use');
         const isImageHidden = document.body.classList.contains('no-image');
 
-        if (isImageHidden) {
-            // Image is now hidden, set icon to "person-off" and title to "Show Image"
-            useTag.setAttribute('href', 'icons.svg#person-off');
+         if (isImageHidden) {
+            // CORRECTED: Use local reference
+            useTag.setAttribute('href', '#person-off');
             toggleImageBtn.title = 'Show Profile Image';
         } else {
-            // Image is now visible, set icon to "person" and title to "Hide Image"
-            useTag.setAttribute('href', 'icons.svg#person');
+            // CORRECTED: Use local reference
+            useTag.setAttribute('href', '#person');
             toggleImageBtn.title = 'Hide Image (for ATS)';
         }
     });

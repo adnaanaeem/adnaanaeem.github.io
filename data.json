@@ -7,29 +7,23 @@
       "ogTitle": "Adnan Naeem - Senior Mobile Applications Engineer",
       "ogDescription": "7+ years of experience in Android & React Native | Built apps with 10M+ downloads | Expert in Kotlin, Java, Jetpack Compose, Firebase",
       "twitterDescription": "Android & React Native Engineer | Apps with 10M+ downloads",
-      "imageUrl": "https://adnaanaeem.github.io/resume/profile.jpg",
-      "resumeUrl": "https://adnaanaeem.github.io/resume"
+      "imageUrl": "https://adnaanaeem.github.io/profile.jpg",
+      "resumeUrl": "https://adnaanaeem.github.io/"
     },
     "structuredData": {
       "name": "Adnan Naeem",
       "jobTitle": "Senior Mobile Applications Engineer",
-      "imageUrl": "https://adnaanaeem.github.io/resume/profile.jpg",
+      "image": "https://adnaanaeem.github.io/profile.jpg", 
       "addressLocality": "Lahore",
-      "addressCountry": "Pakistan",
+      "addressCountry": "PK",
       "email": "mailto:adnaanaeem@gmail.com",
       "telephone": "+923438673052",
-      "socialProfiles": [
+      "sameAs": [
         "https://linkedin.com/in/adnaanaeem",
         "https://github.com/adnaanaeem"
       ],
       "knowsAbout": [
-        "Android",
-        "Kotlin",
-        "React Native",
-        "Jetpack Compose",
-        "Mobile Applications",
-        "Firebase",
-        "MVVM"
+        "Android", "Kotlin", "React Native", "Jetpack Compose", "Mobile Applications", "Firebase", "MVVM"
       ]
     }
   },
