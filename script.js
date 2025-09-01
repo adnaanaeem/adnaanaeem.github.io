@@ -12,7 +12,7 @@ let originalData = {}; // Global access to the loaded data for functions like PD
 async function initializeApp() {
     try {
         originalData = await loadResumeData();
-        renderMetadata(originalData.meta);
+      //  renderMetadata(originalData.meta);
         renderResume(originalData);
         setupEventListeners();
         setupScrollAnimations();
