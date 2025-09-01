@@ -131,7 +131,7 @@ function generateSectionHtml(section) {
         case 'experience': contentHtml = generateExperienceHtml(section.items); break;
         case 'projects': contentHtml = generateProjectsHtml(section.items); break;
         case 'education': contentHtml = generateEducationHtml(section.items); break;
-        default: return ''; // Silently ignore unknown section types
+        default: return ''; 
     }
     return `<div class="section"><div class="section-title">${section.title}</div>${contentHtml}</div>`;
 }
