@@ -45,8 +45,11 @@ async function loadResumeData() {
  */
 // In script.js
 function renderMetadata(meta) {
+    if (!meta) return;
+
     document.title = meta.title;
     const createMetaTag = (attrs) => {
+        // Find by name OR property to correctly update any tag
         let el = document.querySelector(`meta[name="${attrs.name}"], meta[property="${attrs.property}"]`);
         if (!el) {
             el = document.createElement('meta');
@@ -57,16 +60,21 @@ function renderMetadata(meta) {
 
     createMetaTag({ name: 'description', content: meta.description });
     createMetaTag({ name: 'keywords', content: meta.keywords });
+
+    // Open Graph
     createMetaTag({ property: 'og:title', content: meta.social.ogTitle });
     createMetaTag({ property: 'og:description', content: meta.social.ogDescription });
     createMetaTag({ property: 'og:image', content: meta.social.imageUrl });
     createMetaTag({ property: 'og:url', content: meta.social.resumeUrl });
     createMetaTag({ property: 'og:type', content: 'website' });
+    
+    // Twitter Card
     createMetaTag({ name: 'twitter:card', content: 'summary_large_image' });
     createMetaTag({ name: 'twitter:title', content: meta.social.ogTitle });
     createMetaTag({ name: 'twitter:description', content: meta.social.twitterDescription });
     createMetaTag({ name: 'twitter:image', content: meta.social.imageUrl });
     
+    // Structured Data (JSON-LD)
     let ldJsonScript = document.querySelector('script[type="application/ld+json"]');
     if (!ldJsonScript) {
         ldJsonScript = document.createElement('script');
@@ -74,19 +82,10 @@ function renderMetadata(meta) {
         document.head.appendChild(ldJsonScript);
     }
     const sd = meta.structuredData;
-    // UPDATED to use standard schema.org properties
     ldJsonScript.textContent = JSON.stringify({
-        "@context": "https://schema.org/", 
-        "@type": "Person", 
-        "name": sd.name, 
-        "jobTitle": sd.jobTitle, 
-        "url": meta.social.resumeUrl, 
-        "image": sd.image, // Corrected: sd.image
+        "@context": "https://schema.org/", "@type": "Person", "name": sd.name, "jobTitle": sd.jobTitle, "url": meta.social.resumeUrl, "image": sd.image,
         "address": { "@type": "PostalAddress", "addressLocality": sd.addressLocality, "addressCountry": sd.addressCountry },
-        "email": sd.email, 
-        "telephone": sd.telephone, 
-        "sameAs": sd.sameAs, // Corrected: sd.sameAs
-        "knowsAbout": sd.knowsAbout
+        "email": sd.email, "telephone": sd.telephone, "sameAs": sd.sameAs, "knowsAbout": sd.knowsAbout
     }, null, 2);
 }
 

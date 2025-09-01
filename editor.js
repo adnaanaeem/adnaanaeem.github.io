@@ -30,7 +30,6 @@ async function loadAndPopulateForm() {
         document.getElementById('contact-linkedin').value = data.personalInfo.contact.linkedin;
         document.getElementById('contact-github').value = data.personalInfo.contact.github;
 
-        // --- THE FIX IS HERE ---
         // Populate the single summary field directly, NOT with the helper function.
         document.getElementById('summary').value = data.sections.find(s => s.type === 'summary').content;
 
@@ -62,7 +61,6 @@ function populateSection(containerId, items, addFunction) {
 
 
 // --- DYNAMIC FORM ELEMENT FUNCTIONS ---
-// (These functions are unchanged and correct)
 
 function addTechnology(tech = {}) {
     const container = document.getElementById('technologies-container');
@@ -144,7 +142,6 @@ function removeItem(elementId) {
 
 /**
  * Reads all form fields and generates the final data.json content.
- * (This function is unchanged and correct)
  */
 function generateJson() {
     const finalJson = JSON.parse(JSON.stringify(originalData));

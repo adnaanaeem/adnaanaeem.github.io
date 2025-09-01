@@ -90,7 +90,6 @@ body.dark-mode .job-details, body.dark-mode .institution, body.dark-mode .qr-lab
     list-style-type: disc; /* Use a standard bullet */
     margin-left: 15px;    /* Indent it a bit */
     padding-left: 5px;
-    /* ... remove the ::before pseudo-element ... */
 }
 .achievements li::before {
     display: none; /* Hide the custom one */
@@ -173,7 +172,6 @@ body.pdf-view a { color: inherit !important; }
         width: auto;        /* Let it size naturally */
     }
 
-    /* Adjust FAB and WhatsApp buttons so they don't overlap */
     .whatsapp-float {
         bottom: 15px;
         right: 15px;
