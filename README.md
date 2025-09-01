@@ -8,8 +8,8 @@ A simple, modern, and feature-rich online resume template that is dynamically po
 
 ### [View the Live Demo](https://adnaanaeem.github.io/)
 
-![Live Resume Screenshot](social-card.jpg)
-*(This project uses the `social-card.jpg` as its preview image. You should create your own!)*
+![Live Resume Screenshot](social_card.png)
+*(This project uses the `social_card.png` as its preview image. You should create your own!)*
 
 ---
 
@@ -50,7 +50,7 @@ This is where you'll spend most of your time. Open the `data.json` file and edit
     "social": {
       "ogTitle": "Your Name - Your Title",
       "ogDescription": "A slightly different description for social media previews.",
-      "imageUrl": "https://yourusername.github.io/social-card.jpg"
+      "imageUrl": "https://yourusername.github.io/social_card.png"
       // ... and other social details
     }
   },
