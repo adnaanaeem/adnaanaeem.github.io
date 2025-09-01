@@ -4,12 +4,12 @@ document.getElementById('load-btn').addEventListener('click', loadAndPopulateFor
 document.getElementById('generate-btn').addEventListener('click', generateJson);
 
 /**
- * Loads the existing data.json file and populates the entire form.
+ * Loads the existing resume.json file and populates the entire form.
  */
 async function loadAndPopulateForm() {
     try {
-        const response = await fetch('data.json');
-        if (!response.ok) throw new Error('Could not find data.json. Make sure you are using a local server.');
+        const response = await fetch('resume.json');
+        if (!response.ok) throw new Error('Could not find resume.json. Make sure you are using a local server.');
         const data = await response.json();
         originalData = data; // Save the original structure
 
@@ -41,7 +41,7 @@ async function loadAndPopulateForm() {
         
         alert('Data loaded successfully!');
     } catch (error) {
-        alert('Could not load data.json. Starting with a blank form. Error: ' + error.message);
+        alert('Could not load resume.json. Starting with a blank form. Error: ' + error.message);
     }
 }
 
@@ -141,7 +141,7 @@ function removeItem(elementId) {
 
 
 /**
- * Reads all form fields and generates the final data.json content.
+ * Reads all form fields and generates the final resume.json content.
  */
 function generateJson() {
     const finalJson = JSON.parse(JSON.stringify(originalData));
@@ -194,7 +194,7 @@ function generateJson() {
     outputArea.value = JSON.stringify(finalJson, null, 2);
     outputArea.select();
     navigator.clipboard.writeText(outputArea.value).then(() => {
-        alert('JSON generated and copied to clipboard! Paste it into your data.json file.');
+        alert('JSON generated and copied to clipboard! Paste it into your resume.json file.');
     }).catch(err => {
         alert('JSON generated! Please copy it from the textarea below.');
         console.error('Could not copy to clipboard:', err);

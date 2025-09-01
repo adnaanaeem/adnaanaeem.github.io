@@ -25,13 +25,13 @@ async function initializeApp() {
 }
 
 /**
- * Data Source Layer: Fetches the resume data from the data.json file.
+ * Data Source Layer: Fetches the resume data from the resume.json file.
  * @returns {Promise<object>} The resume data object.
  */
 async function loadResumeData() {
-    const response = await fetch('data.json');
+    const response = await fetch('resume.json');
     if (!response.ok) {
-        throw new Error(`Failed to fetch data.json: ${response.statusText}`);
+        throw new Error(`Failed to fetch resume.json: ${response.statusText}`);
     }
     return await response.json();
 }
@@ -41,7 +41,7 @@ async function loadResumeData() {
 
 /**
  * Dynamically populates the <head> tag with SEO and social media metadata.
- * @param {object} meta - The meta object from data.json.
+ * @param {object} meta - The meta object from resume.json.
  */
 // In script.js
 function renderMetadata(meta) {
@@ -120,7 +120,7 @@ function renderResume(data) {
 
 /**
  * Creates the HTML for a full section wrapper (e.g., Experience, Projects).
- * @param {object} section - A section object from data.json.
+ * @param {object} section - A section object from resume.json.
  * @returns {string} The complete HTML for a section.
  */
 function generateSectionHtml(section) {
