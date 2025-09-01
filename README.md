@@ -40,7 +40,7 @@ You have two options to add your personal information. Using the editor is recom
 
 The editor provides a user-friendly interface to generate your `resume.json` file without ever touching the code.
 
-1.  **Go to the Resume Editor**: **[IMPORTANT: Link to your editor here]**
+1.  **Go to the Resume Editor**: **[https://adnaanaeem.github.io/editor.html]**
 2.  **Fill out the form** with all your personal details, experience, skills, etc.
 3.  Click the **"Generate & Download JSON"** button.
 4.  Rename the downloaded file to `resume.json`.
